@@ -31,7 +31,6 @@ export const getPostsWithUserName = async (req, res) => {
     if (req.body.SortBy != undefined) {
         v_query = v_query + " ORDER BY " + req.body.SortBy.field + " " + req.body.SortBy.order
     }
-    console.log(v_query);
     try {
         const response = await db.query(v_query, { raw: false });
         res.status(200).json(response);
