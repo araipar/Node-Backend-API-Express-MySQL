@@ -49,7 +49,9 @@ GET http://localhost:5000/postsWithName
 Content-Type: application/json
 
 {
-    "SortBy": {"field": "name", "order": "ASC"}
+    "name": "Jessica Paramartha",
+    "email": "jes@gmail.com",
+    "SortBy": {"field": "\"createdAt\"", "order": "desc"}
 }
 
 ###
