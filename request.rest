@@ -48,5 +48,8 @@ Content-Type: application/json
 GET http://localhost:5000/postsWithName
 Content-Type: application/json
 
+{
+    "SortBy": {"field": "name", "order": "ASC"}
+}
 
 ###
