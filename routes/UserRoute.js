@@ -21,7 +21,7 @@ router.post('/users', createUser);
 router.patch('/users/:id', updateUser);
 router.delete('/users/:id', deleteUser);
 router.get('/posts', getPosts);
-router.get('/postsWithName', getPostsWithUserName);
+router.post('/postsWithName', getPostsWithUserName);
 router.post('/posts', createPost);
 
 export default router;
